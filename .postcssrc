@@ -1,0 +1,6 @@
+{
+  "plugins": {
+	"postcss-type-scale": true,
+	"postcss-lh": true,
+  }
+}

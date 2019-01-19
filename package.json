@@ -1,0 +1,27 @@
+{
+  "name": "simple-parcel-site",
+  "version": "1.0.0",
+  "description": "Simple parcel site ",
+  "main": "index.js",
+  "keywords": [],
+  "author": "lilliputten <igor@lilliputten.ru> (http://lilliputten.ru)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilliputten/simple-parcel-site-1901.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.5",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.11.0",
+    "postcss-lh": "^2.0.2",
+    "postcss-type-scale": "^1.0.0",
+    "pug": "^2.0.3"
+  },
+  "scripts": {
+    "start": "parcel src/index.pug",
+    "build": "parcel build src/index.pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
