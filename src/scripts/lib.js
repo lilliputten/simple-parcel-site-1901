@@ -1,4 +1,5 @@
-export function appendTo (tag, content) {
-  const node = document.getElementsByTagName(tag)[0];
+export function appendTo (lookup, content) {
+  // const node = document.getElementsByTagName(lookup)[0];
+  const node = document.getElementById(lookup);
   node.textContent += ' - ' + content;
 }

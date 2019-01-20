@@ -1,6 +1,34 @@
 {
+  "parser": "postcss-scss",
   "plugins": {
-	"postcss-type-scale": true,
-	"postcss-lh": true,
+    "postcss-mixins": {
+      "mixinsDir": "src/styles/mixins"
+    },
+    "postcss-advanced-variables": {
+      "variables": {
+        "defaultFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "defaultFontSize": 16,
+        "titleFontSize": 40,
+        "defaultFontWeight": 400,
+        "defaultLineHeight": "1.6",
+        "pageBgColor": "#fff",
+        "textColor": "#333",
+        "defaultLinkColor": "#38b",
+        "defaultHoveredLinkColor": "#26a",
+        "primaryColor": "#38b",
+        "primaryColorLight": "#4bd",
+        "primaryColorDark": "#26a",
+        "testColor": "#f00"
+      }
+    },
+    "postcss-simple-vars": true,
+    "postcss-color-function": true,
+    "postcss-nested": true,
+    "postcss-type-scale": true,
+    "postcss-lh": true
+  },
+  "unused-plugins": {
+    "postcss-discard-comments": true,
+    "postcss-inline-comment": true
   }
 }

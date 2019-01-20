@@ -1,11 +1,18 @@
 @import './_variables.pcss';
+@import './body.pcss';
+@import './theme1.pcss';
+
+$localColor: gray;
 
 :root {
   line-height: 1.5;
+  /*
   font-size: var(--font-size);
+  */
 }
 
 h1 {
-  font-size: 6;
-  margin-bottom: 1lh;
+  color: color($testColor shade(30%));
+  background-color: color($localColor alpha(.2));
+  @mixin debug green, 30%;
 }
